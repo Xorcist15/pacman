@@ -1,0 +1,25 @@
+:root {
+  --block-size: 32px;
+  --column-number: 20;
+  --row-number: 10;
+  --game-width: calc(var(--block-size) * var(--column-number));
+  --game-height: calc(var(--block-size) * var(--row-number));
+}
+
+/* TODO CENTER THE GAME DIV */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  display: relative;
+  width: var(--game-width);
+  height: var(--game-height);
+  border: solid green;
+  /* margin: auto auto; */
+}
